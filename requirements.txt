@@ -1,0 +1,10 @@
+torch
+pandas
+seaborn
+transformers
+scikit-learn
+streamlit
+openai
+python-dotenv
+pymupdf
+python-docx
