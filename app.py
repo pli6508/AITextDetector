@@ -112,7 +112,7 @@ if "results" not in st.session_state:
 
 # Streamlit interface
 st.title("Detect AI-Generated Text")
-st.markdown("**Beta Version - Demo Only - Developed by Ping Li, Jianfeng Zhang, Jukai Hu, Aiden Wang, Yang Li**")
+st.markdown("**Beta Version - Developed by Wangyang Li (Aiden), Jianfeng Zhang, Jukai Hu, Ping Li**")
 
 # Navigation buttons
 st.sidebar.title("Navigation")
