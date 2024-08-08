@@ -27,8 +27,12 @@ def check_content(model_name, prompt, input_text):
 
 model_name = "gpt-4o-mini"
 prompt = ("Determine if the following content is written by AI or a human, with your level of confidence in %, "
-          "please also reference to the portion of content which you think is AI-generated and which portion is human-written. "
-          "Your answer should be in this format: .")
+          "please also reference the portion of content which you think is AI-generated and which portion is human-written. "
+          "Your answer should be in this format: \n"
+          "Conclusion: [Conclusion here]\n"
+          "Confidence Level: AI-generated [confidence%], Human-written [confidence%]\n"
+          "Analysis: [Detail which portion is AI-generated and which portion is human-written]")
+
 
 # Load the tokenizers and models
 tokenizer_distilbert = DistilBertTokenizer.from_pretrained('aidenliw/essay-detect-distilbert')
